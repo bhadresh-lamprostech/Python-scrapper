@@ -1,0 +1,14 @@
+use python 
+read index.html file and parse it with beautifulsoup
+
+find all div with class= s-card-container s-overflow-hidden aok-relative puis-expand-height puis-include-content-margin puis s-latency-cf-section s-card-border"
+for each div above list,
+try find img  with class="s-image" then link=img.src
+except link=''
+try find span with class="a-size-base-plus a-color-base a-text-normal" then title=span.text
+except title=''
+try find span with class="a-icon-alt" then rating=span.text
+except rating=''
+try find span with class="a-price-whole" then price=span.text
+except price=''
+open data.xlsx and write link,title,rating and price. 
